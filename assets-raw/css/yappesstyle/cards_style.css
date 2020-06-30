@@ -1,0 +1,781 @@
+.thumbnail {
+	width: 250px;
+	
+}
+/* .gridthump {
+height: 360px;
+} */
+.thumbnail img {
+	width: 242px;
+	height: 200px;
+}
+
+/* .testAdjust {
+	height: 32px;
+} */
+
+/* .centerContent {
+	padding-top: 15px;
+} */
+
+.alignCenter {
+    text-align: center
+}
+
+.gridulapi {
+	 position: relative;
+     list-style: none;
+}
+
+.gridulapi li {
+	width: 33%;
+    float: left;
+    padding: 1%;
+}
+
+.gridulapi li:hover {
+    background: transparent;
+}
+
+.gridsectionapi {
+	max-width: 85em;
+    margin: 0 auto;
+    padding: 0 1em 1.875em;
+}
+.testAdjust {
+/*  min-height: 50px; */
+    height: 80px;
+   /*  overflow: auto; */
+}
+/**** Beta landing CSS*/
+#mydiv .btn-xlarge {
+    padding: 12px 20px;
+    font-size: 16px;
+    line-height: normal;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+}
+#mydiv .btn-default {
+    color: #333 !important;
+    background-color: #fff !important;
+    border-color: #ccc !important;
+}
+#mydiv .btn-warning {
+    color: #fff !important;
+    background-color: #f0ad4e !important;
+    border-color: #eea236 !important;
+}
+#mydiv .btn-warning:hover {
+    color: #fff !important;
+    background-color: #ec971f !important;
+    border-color: #d58512 !important;
+}
+#mydiv
+{
+	width:102%;
+	margin-top:-1%;
+	overflow-x: hidden;
+}
+
+#mydiv #tabSection{
+	margin-left: 2%;
+}
+#mydiv #platform{
+	margin-left: 1%;
+}
+
+#mydiv .nopadding {
+   padding: 0 !important;
+   margin: 0 !important;
+}
+#mydiv #features{
+	margin-bottom: 100px;
+}
+
+
+#mydiv .descripYappes{
+	color: gray; 
+	font-family: 'Droid Sans', sans-serif; 
+	font-size: 15px; 
+	line-height: 14px;
+	text-align: justify;
+	text-justify: inter-word;
+	margin: 0 0 14px;
+	padding-bottom:25px;
+	display: block;
+	line-height: 1.8;
+	margin: 0 0 5px;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    font-weight: 100;
+}
+
+#mydiv .pStyle{
+	width: 300px; 
+	color:#444;
+	font-family: Trebuchet MS; 
+	font-size: 15px; 
+	font-weight: 400; 
+	line-height: 14px;
+	text-align: justify;
+	text-justify: inter-word;
+	margin: 0 0 14px;
+	display: block;
+	line-height: 1.8;
+	margin: 0 0 5px;
+	margin-left:10%;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    margin-left:3%;
+}
+
+#mydiv .horizontal { 
+	display: inline; 
+	border-left: 2px solid;  
+	margin: 7px 0 0 0; 
+	color: #444; 
+	}
+#mydiv h1{
+	color: #2B2B2B;
+    font-family: 'Roboto';
+    font-size: 35px;
+    font-weight: 100;
+    line-height: 38px;
+    margin-top:10%;
+    margin-bottom: 32px;
+    max-width: 700px;
+    position: relative;
+}
+#mydiv h2{
+	text-align: center;
+	font-family: Trebuchet MS;
+	font-size: xx-large;
+	font-style: normal;
+	margin-top: 3%;
+	color: white;
+	
+}
+#mydiv h5{
+	text-align: center;
+	font-family: sans-serif;
+	font-size: large;
+	font-style: normal;
+	margin-top: 3%;
+	color: white;
+}
+#mydiv .yp-applogo {
+    width: 22%;
+    display: block;
+    margin: 0 auto;
+}
+
+#mydiv .yp-brand {
+    width: 12%;
+    
+}
+
+#mydiv .yp-theme-color {
+    background-color: #28574D
+}
+
+#mydiv .yp-theme-color:hover {
+    background-color: #28574D
+}
+
+#mydiv .yp-font-style {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 20px;
+}
+
+#mydiv .yp-font-nav-style {
+    font-family: Verdana, Geneva, sans-serif;
+    font-weight: bolder;
+    font-size: 20px;
+    color: white;
+}
+
+#mydiv .yp-height-full {
+    height: 98vh;
+}
+
+#mydiv .yp-bg {
+    background-image: url('../images/yp-bg-blackish.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    height: 100vh;
+}
+#mydiv .yp-content-center {
+    width: 100%;
+    text-align: center;
+}
+
+#mydiv .yp-subscribe-email {
+    width: 40%;
+    
+}
+
+#mydiv .yp-subscribe-loading {
+    font-size: 50px !important;
+    /*margin-left:82%;*/
+}
+
+#mydiv .navbar-right li {
+	padding-right:30px !important;
+}
+
+/* Material Design CSS*/
+#mydiv .yp-md-label {
+	border-radius: 0px;
+	background-color: #28574D;
+}
+
+#mydiv .yp-scroll-arrow-down {
+    font-size: 35px;
+    color: white;
+    width: 50px;
+    line-height: 52px;
+    border-radius: 50%;
+    height: 50px;
+    border: 4px solid white;
+    display: block;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 20px;
+    
+    margin-left:50%;
+    z-index: 1029;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    opacity: .9;
+    cursor: pointer;
+    text-align: center;
+}
+
+#mydiv .yp-scroll-arrow-up {
+    font-size: 35px;
+    color: white;
+    width: 50px;
+    border-radius: 50%;
+    height: 50px;
+    position:fixed;
+    display: block;
+    margin: 0 auto;
+    bottom: 20px;
+    left: 50%;
+    z-index: 1029;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    cursor: pointer;
+    margin-left: 42%;
+    text-align: center;
+    color:white;
+    border:  4px solid white;
+    
+}
+
+#mydiv .yp-scroll-arrow-up .fa {
+	margin-top:2px;
+}
+
+#mydiv .yp-scroll-arrow-down focus {
+	color: white !important;
+}
+
+#mydiv .yp-scroll-arrow-down hover {
+	color: white !important;
+}
+
+#mydiv nav li a:hover {
+    color: white !important;
+}
+#mydiv nav li a:focus {
+    color: white !important;
+}
+#mydiv .panel {
+	border-radius: 0px !important;
+	border: 0px;
+}
+#mydiv .list-groups-features li {
+	padding:2.8%;
+	background-color: #201313;
+	color: white;
+	border:none !important;
+}
+#mydiv .list-groups-features {
+	padding-left:0%;
+}
+#mydiv .platform-img-container {	
+	padding-left:18%;
+	padding-top:2%;
+	padding-bottom:2%;
+}
+#mydiv .container-no-padding {
+	padding-left:0%;
+	padding-right:0%;
+}
+
+#mydiv .container-no-padding .panel {
+	margin:0px;
+	background-color: #201313;
+	color: white;
+	border: 0px;
+}
+
+#mydiv .main-container-no-padding {
+	padding-left:0%;
+	padding-right:0%;
+}
+
+#mydiv .main-container-no-padding .panel {
+	margin:0px;
+	border: 0px;
+}
+
+#mydiv .yp-right-alignment {
+	text-align: right;
+}
+#mydiv .yp-left-alignment {
+    text-align: left;
+}
+
+#mydiv .yp-subscribe-btn {
+	margin-left:56%;
+	border: none !important;
+}
+#mydiv .yp-subscribe-row {
+	padding-top: 2%
+}
+#mydiv .yp-follow-panel {
+	padding-top: 3%;
+}
+#mydiv .yp-follow-panel .row {
+	padding-left:29%;
+	padding-top:1%;
+}
+#mydiv .yp-features {
+	background-color: #201313;
+	color: white;
+}
+#mydiv .yp-panel-heading {
+	padding-bottom:2%;
+}
+
+#mydiv .yp-social-fonts {
+    font-size: 14px;
+}
+
+#mydiv .yp-social-fonts a {
+    color: #ffffff;
+    text-decoration:none; 
+    padding-left: 20px;   
+}
+
+#mydiv .yp-social-fonts a:hover {
+    color: #ffffff;
+    text-decoration:none; 
+}
+
+#mydiv .yp-footer {
+    font-size: 10px;
+    padding-top: 2%;
+}
+
+#mydiv .list-groups>li {
+    border: 0px;
+}
+
+#mydiv .yp-flat-border {
+    border-radius: 0px;
+}
+
+#mydiv .yp-checkbox-valign {
+    font-size: 15px;
+}
+
+#mydiv .yp-partner-image-res {
+    height: 70px;
+    width: 140px;
+    text-decoration: none;
+}
+
+#mydiv .help-block {
+    font-size: 15px;
+}
+#mydiv .panel-def{
+  background: url(images/yp_beta_whitebg.png) center center no-repeat;
+  background-size: cover;
+  background: rgba(57,204,204,1);
+  background: -webkit-linear-gradient(right, rgba(57,204,204,1) 0%, rgba(34,122,122,1) 100%);
+  background: linear-gradient(to left, rgba(57,204,204,1) 0%, rgba(34,87,100,1) 100%);
+  
+ 
+}
+#mydiv .image{ 
+	left:.7%;
+ display: block; width: 100%;
+ -webkit-filter: opacity(.2);
+  filter: opacity(.2);
+}
+#mydiv .panel-def .image{
+    position:absolute;
+    z-index:0;
+    height:110%;
+    margin:-10px;
+}
+#mydiv .panel-def2{
+  background: rgba(57,204,204,1) ;
+  background: -webkit-linear-gradient(right, rgba(57,204,204,1) 0%, rgba(34,122,122,1) 100%);
+  /* background: linear-gradient(to left, rgba(57,204,204,1) 0%, rgba(34,122,122,1) 100%); */
+  background: linear-gradient(to left, rgba(57,204,204,1) 0%, rgba(34,87,100,1) 100%);
+}
+#mydiv .panel-def4{
+background-color: #F9F9F9;
+}
+#mydiv .panel-def5{
+  background: rgba(57,204,204,1) ;
+  background: -webkit-linear-gradient(right, rgba(57,204,204,1) 0%, rgba(34,122,122,1) 100%);
+  /* background: linear-gradient(to left, rgba(57,204,204,1) 0%, rgba(34,122,122,1) 100%); */
+  background: linear-gradient(to left, rgba(57,204,204,1) 0%, rgba(34,87,100,1) 100%);
+}
+#mydiv .panel-Benefits{
+	background-color: #F9F9F9;
+}
+#mydiv P{
+	color: white;
+}
+#mydiv .sub{
+	font-family: 'Open Sans';
+    font-size: 17px;
+    color: white;
+    letter-spacing: 0.62px;
+    max-width: 700px;
+    
+   /*  display: block; */
+    margin-top: 10px;
+    font-weight: 300
+	
+}
+#mydiv .contact{
+	
+	margin-top: 2px;
+    
+}
+#mydiv .contact-msg{
+	font-family: 'Open Sans';
+    font-size: 17px;
+    color: white;
+    letter-spacing: 0.62px;
+    
+}
+#mydiv .emailPart{
+	margin-top:3%;
+	margin-left: 1%;
+	color: white;
+	font-family: 'Open Sans';
+}
+#mydiv .img-rectangle {
+    -webkit-animation: fadein 2.5s; /* Safari and Chrome */
+    -moz-animation: fadein 2.5s; /* Firefox */
+    -ms-animation: fadein 2.5s; /* Internet Explorer */
+    -o-animation: fadein 2.5s; /* Opera */
+    animation: fadein 2.5s;
+}
+
+#mydiv .img-footer {
+    width: 120px;
+    height: 80px;
+}    
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari and Chrome */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}​
+
+​
+/* CSS used here will be applied after bootstrap.css */
+#mydiv .thumbnail_container {
+     position: relative;
+     width: 100%;
+     padding-bottom: 100%;
+  margin-bottom:20px;
+}
+
+#mydiv .thumbnail {
+    width:100%;
+    height:100%;
+}
+#mydiv .thumbnail img {
+    top: 0 !important;
+    bottom: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    margin: auto !important;
+    width:100%;
+    height:100%;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+#mydiv img{
+    max-height:100%;
+    max-width:100%;
+}
+#mydiv .respo_descripContainer{
+	position: relative;
+     width: 100%;
+     padding-bottom: -5%;
+  margin-bottom:20px;
+}
+#mydiv .respo_descripYappes{
+	 width:100%;
+    height:100%;
+}
+#mydiv .respo_descripYappes p {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+#mydiv #para{
+	 max-height:100%;
+    max-width:100%;
+}
+
+
+#mydiv .topheading {
+    font-family: Open Sans;
+    font-size: 35px;
+    color: #FFFFFF;
+    letter-spacing: 1.03px;
+   /*  margin: 0 0 5px 0;
+    margin-top: 20%; */
+}
+#mydiv .button {
+background-color: #004D40;
+color: white;
+}
+#mydiv .wel {
+	padding: 58.8px;
+    margin-bottom: 20px;
+    
+    border: 1px solid #004D40;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.05);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.05);
+}
+#mydiv .modal-header {
+    padding: 7px;
+    border-bottom: -1px solid #ec971f;
+}
+@media only screen and (min-device-width: 339px) {
+.pullleft{
+right: 12%;
+}
+#mydiv .pullright{
+right: 4%;
+}
+#mydiv .alignCenter{
+	text-align: center;
+}
+#mydiv .todown{
+	padding-top:10%;
+}
+#mydiv #p1{
+font-size: 25px;
+}
+#mydiv #p2{
+font-size: 20px;	
+}
+}
+
+#mydiv .navbar {
+    margin: 0px !important;
+    border-radius: 0px !important;
+    border: none !important;
+}
+
+#mydiv .navbar-default {
+  background-color:rgba(0,0,0,0.5) !important;
+  background-image: none !important;
+  background-repeat: no-repeat !important;  
+}
+
+#mydiv .navbar-default .yp-font-nav-style>li>a {
+    font-family: Verdana, Geneva, sans-serif !important;
+    font-weight: bolder !important;
+    font-size: 20px !important;
+    color: white !important;     
+}
+
+#mydiv .navbar-brand {
+	height: 42px !important;
+	padding: 0px !important;
+}
+#mydiv .navbar-right li {
+	padding-right:30px !important;
+}
+#mydiv .navbar-toggle {
+    position: relative !important;
+    float: right !important;
+    padding: 9px 10px !important;
+    margin-top: 8px !important;
+    margin-right: 15px !important;
+    margin-bottom: 8px !important;
+    background-color: white !important;
+    color: white !important;
+    background-image: none !important;
+    border: 1px solid transparent !important;
+    border-radius: 4px !important;
+}
+#mydiv .nav-tabs>li>a {
+    margin-right: 2px !important;
+    line-height: 1.42857143 !important;
+    border: 1px solid transparent !important;
+    border-radius: 4px 4px 0 0 !important;
+    font-family: Trebuchet MS !important;
+}
+#mydiv .nav-tabs>li.active>a, #mydiv .nav-tabs>li.active>a:focus, #mydiv .nav-tabs>li.active>a:hover {
+    color: #555 !important;
+    cursor: default !important;
+    background-color: #4a90e2 !important;
+    border-bottom-color: transparent !important;
+    font-family: Trebuchet MS !important;
+}
+#mydiv ul li:hover, #mydiv .nav-tabs
+{
+	    background: none !important;
+}
+#mydiv .nav-tabs>li>a:hover {
+    border-color: #eee #eee #ddd !important;
+}
+#mydiv .nav>li>a:focus, #mydiv .nav>li>a:hover {
+    text-decoration: none !important;
+    background-color: #eee !important;
+}
+
+#mydiv .nav-tabs > li.active > a::after {
+   color: #4a90e2 !important;
+   border-top: 23px inset transparent !important;
+   border-bottom: 25px inset transparent !important;
+   border-left: 20px solid #08C !important;
+   position: absolute !important;
+   content: "" !important;
+   top: 0 !important;
+   right: -22px !important;
+   z-index: 4 !important;
+    background:none !important;
+    height: 2px;
+    position: absolute;
+    width: initial !important;
+    left:  initial !important;
+    bottom: -1px;
+    transition: all 250ms ease 0s;
+    transform: scale(1) !important;
+}
+#mydiv .nav-tabs>li>a::after
+{
+	background:none !important;
+}
+#mydiv ul {
+border-right:none;
+}
+#mydiv .nav-tabs>li>a, #mydiv .nav-tabs>li>a:focus, #mydiv .nav-tabs>li>a:hover
+{
+	color: #337ab7 !important;
+}
+#mydiv .nav-tabs>li {
+    float: left;
+}
+#mydiv .btn:hover {
+    color: #333 !important;
+    text-decoration: none !important;
+}
+#mydiv .btn-warning:hover {
+    color: #fff !important;
+    background-color: #ec971f !important;
+    border-color: #d58512 !important;
+}
+.yp_landingheader
+{
+  background-image: url(/images/header_logo.JPG) !important;
+  background: rgba(57,204,204,1);
+  background: -webkit-linear-gradient(right, rgba(57,204,204,1) 0%, rgba(34,122,122,1) 100%);
+  background: linear-gradient(to left, rgba(57,204,204,1) 0%, rgba(34,87,100,1) 100%);
+  box-shadow:none !important;
+  background-size: 100% 100%;
+}
+.yp_buttons, .yp_buttons:HOVER,.yp_buttons:ACTIVE,.yp_buttons:FOCUS
+{
+	 color: #fff !important;
+	 background-color: #004D40 !important;
+	
+}
+.yp_tabbuttons, .yp_tabbuttons:HOVER,.yp_tabbuttons:FOCUS,.yp_tabbuttons:ACTIVE , .yp_tabbuttons a,.landingheader .nav .open>a, .landingheader.nav .open>a:focus, .landingheader .nav .open>a:hover
+{
+	color: #fff !important;
+	background-color: transparent !important;
+	font-family: 'Roboto';
+    font-size: 20px;
+    font-weight: 100;
+    outline: none !important;
+}
+#mydiv a , #mydiv a :HOVER
+{
+	text-decoration: none;
+}
+.yp_buttons  a
+{
+	text-decoration: none;
+	color: white; 
+	font-size: large; 
+	font-weight: 200; 
+	padding: 12px 20px;
+}
+    #mydiv .icon-nav>li>a:focus, #mydiv .icon-nav>li>a:hover{
+      text-decoration: none !important;
+      background-color: transparent !important;
+
+    }
+
+#SignInUpForm .ng-invalid-pattern
+{
+    background-image: -webkit-gradient(linear,left top,left bottom,from(#f44336),to(#f44336)),-webkit-gradient(linear,left top,left bottom,from(#D2D2D2),to(#D2D2D2)) !important;
+    background-image: -webkit-linear-gradient(#f44336,#f44336),-webkit-linear-gradient(#D2D2D2,#D2D2D2)!important !important;
+    background-image: -o-linear-gradient(#f44336,#f44336),-o-linear-gradient(#D2D2D2,#D2D2D2) !important;
+    background-image: linear-gradient(#f44336,#f44336),linear-gradient(#D2D2D2,#D2D2D2) !important;
+}

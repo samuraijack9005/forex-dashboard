@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html ng-app="mainApp">
+
+<head>
+    <title>Forex Dash</title>
+    <link rel="icon" type="image/png" href="dist/images/favicon.ico"  sizes="300x300" />
+   
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-notification/0.3.6/angular-ui-notification.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.8/angular-csp.css" rel="stylesheet">
+    <link href="dist/css/libcss.min.css" rel="stylesheet">
+    <link href="dist/css/main.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/textAngular/1.5.16/textAngular.min.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.8/angular.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.8/angular-resource.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.8/angular-route.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.8/angular-mocks.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript" src="https://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.14.3.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.40.0/codemirror.min.js"></script>
+    <!-- <script type="text/javascript" src="dist/js/libs.min.js"></script> -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-notification/0.3.6/angular-ui-notification.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/ngStorage/0.3.11/ngStorage.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-confirm/1.2.6/angular-confirm.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-cookie/4.1.0/angular-cookie.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-local-storage/0.7.1/angular-local-storage.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-material/0.9.4/angular-material.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.8/angular-aria.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.8/angular-animate.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/canvasjs/1.7.0/canvasjs.min.js"></script>
+    <script type="text/javascript" src="dist/js/libs.min.js"></script>
+    <script type="text/javascript" src="dist/js/main.min.js"></script>
+    
+</head>
+
+<body class="main-class" ng-controller="mainController">
+    <div>
+        <div class="col-md-12">
+           <!--  <div class="col-md-2 time-dropdown">
+                <select ng-model="timeFrame" >
+                    <option>h1</option>
+                    <option>h4</option>
+                    <option>d1</option>
+                    <option>w1</option>
+                </select>
+            </div> -->
+            <div class="col-md-3">
+                <table class="strength-table" ng-init="long='long';short='short'">
+                    <tr style="background:#3f3f44;color:white;">
+                        <th>currency </th>
+                        <th ng-click="chartFunc('h1')" class="hid-btn"> h1 </th>
+                        <th ng-click="chartFunc('h4')" class="hid-btn"> h4</th>
+                        <th ng-click="chartFunc('d1')" class="hid-btn">d1</th>
+                        <th ng-click="chartFunc('w1')" class="hid-btn">w1</th>
+                    </tr>
+                    <tr ng-repeat="cur in currencies">
+                        <th style="color: white;background: #3f3f44;">{{cur}}</th>
+                        <td ng-repeat="time in timeFrameArray" ng-class="{red:currencyMeter2[time][cur].per<=40,yellow:currencyMeter2[time][cur].per > 40 && currencyMeter2[time][cur].per <=60 ,green: 60 < currencyMeter2[time][cur].per}">{{currencyMeter2[time][cur].per}}</td>
+                    </tr>
+                    <tr class="pairs-row">
+                        <th style="color: white;background: #3f3f44;">pairs</th>
+                        <td ng-repeat="time in timeFrameArray" ng-class="{red:weakStrong[time].action==short,green:weakStrong[time].action==long}">
+                            <p class="pairs">{{weakStrong[time].pair}}</p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+           
+            <div class="col-md-3 animals-graph">
+                <div id="animals" style="height: 250px; width: 450px;"></div>
+            </div>
+            <div class="col-md-4 breaking-news-table">
+              <!--   <table><tr ng-repeat="data in breakingNews"><td class="title"><a href="{{data.link}}">{{data.title |first60}}</a></td><td class="time">{{data.time}}</td> <td><button type="button"  data-toggle="collapse" data-target={{data.title|idTypeCast}}>collapsible</button></td>
+                    <div id="{{data.title | idTypeCast}}" class="collapse">{{data.description}}</div></tr>
+                </table> -->
+                <div ng-repeat="data in breakingNews" ng-init="high='high';medium='medium'">
+                    <div class="col-md-12 news-box" >
+                        <div class="col-md-7 title" ng-class="{'impact-high':data.impact==high,'impact-medium':data.impact==medium}"><a href="{{data.link}}" >{{data.title|first60}}</a></div>
+                        <div class="col-md-3 time">{{data.time | timeFilter}}</div>
+                        <div class="col-md-2 drop-down" data-toggle="collapse" data-target="#{{data.title|idTypeCast}}" ></div>
+                    </div>
+                    <div id="{{data.title | idTypeCast}}" class="collapse description">{{data.description}}</div>
+                </div>
+            </div>
+             <div class="col-md-2 dxy" ng-class="{changePlus:changeDxy.indexOf('+')!=-1,changeMin:changeDxy.indexOf('-')!=-1}"><p class="dxy-title">DXY</p><h3 class="current">{{currentDxy}}</h3><p class="change">{{changeDxy}}</p></div>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <div class="col-md-1"></div>
+        <div class="col-md-4 breaking-news-table">
+              <!--   <table><tr ng-repeat="data in breakingNews"><td class="title"><a href="{{data.link}}">{{data.title |first60}}</a></td><td class="time">{{data.time}}</td> <td><button type="button"  data-toggle="collapse" data-target={{data.title|idTypeCast}}>collapsible</button></td>
+                    <div id="{{data.title | idTypeCast}}" class="collapse">{{data.description}}</div></tr>
+                </table> -->
+                <div ng-repeat="data in stories" ng-init="low='low';story='story'">
+                    <div class="col-md-12 news-box" >
+                        <div class="col-md-7 title" ng-class="{'impact-low':data.impact==low,'impact-story':data.impact==story}"><a href="{{data.link}}" >{{data.title|first60}}</a></div>
+                        <div class="col-md-3 time">{{data.time |timeFilter}}</div>
+                        <div class="col-md-2 drop-down" data-toggle="collapse" data-target="#{{data.title|idTypeCast}}" ></div>
+                    </div>
+                    <div id="{{data.title | idTypeCast}}" class="collapse description">{{data.description}}</div>
+                </div>
+            </div>
+    </div>
+</body>
+
+</html>
