@@ -55,6 +55,7 @@
     "countup.js": "^1.9.3",
     "countup.js-angular1": "^1.0.0",
     "font-awesome": "^4.7.0",
+    "gulp-cli": "^2.3.0",
     "gulp-update": "0.0.2",
     "jquery": "^1.9.1",
     "jsoneditor": "^5.32.0",

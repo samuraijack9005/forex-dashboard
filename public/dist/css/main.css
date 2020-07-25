@@ -169,7 +169,8 @@
         height: 36px;
         margin-left: -34px;
         text-align: center;
-        margin-top: -8px; }
+        margin-top: -8px;
+        font-family: sans-serif; }
       .main-class .breaking-news-table .news-box .time {
         height: 36px;
         margin-left: -13px;
@@ -198,13 +199,13 @@
           -webkit-box-shadow: 0px 0px 0px 0px rgba(88, 84, 84, 0.1);
           box-shadow: 0px 0px 0px 0px rgba(88, 84, 84, 0.1); }
     .main-class .breaking-news-table .description {
-      font-family: verdana;
+      font-family: sans-serif;
       color: rgba(0, 0, 0, 0.88); }
   .main-class .news-table {
     width: 576px;
     background: #5cdb95;
     float: left;
-    margin-left: -110px;
+    margin-left: -131px;
     margin-top: 24px; }
     .main-class .news-table .breaking-news-lable {
       /*  background: rgb(56,59,61);
@@ -270,7 +271,8 @@
         height: 36px;
         margin-left: -34px;
         text-align: center;
-        margin-top: -8px; }
+        margin-top: -8px;
+        font-family: sans-serif; }
       .main-class .news-table .news-box .time {
         height: 36px;
         margin-left: -13px;
@@ -299,7 +301,7 @@
           -webkit-box-shadow: 0px 0px 0px 0px rgba(88, 84, 84, 0.1);
           box-shadow: 0px 0px 0px 0px rgba(88, 84, 84, 0.1); }
     .main-class .news-table .description {
-      font-family: verdana;
+      font-family: sans-serif;
       color: rgba(0, 0, 0, 0.88); }
   .main-class .calendar {
     z-index: 1;
@@ -381,7 +383,7 @@
           box-shadow: 9px 0px 9px #0b0c0c75 inset; }
   .main-class .impact-high a {
     font-weight: 700;
-    font-family: verdana;
+    font-family: sans-serif;
     text-decoration: none;
     color: #d92027c9;
     -webkit-transition: color, font-size 0.3s;
@@ -393,7 +395,7 @@
       text-decoration: none; }
   .main-class .impact-medium a {
     font-weight: 700;
-    font-family: verdana;
+    font-family: sans-serif;
     text-decoration: none;
     color: #ff9234;
     -webkit-transition: color, font-size 0.3s;
@@ -404,7 +406,7 @@
       color: #5a5351;
       text-decoration: none; }
   .main-class .impact-low a {
-    font-family: verdana;
+    font-family: sans-serif;
     text-decoration: none;
     color: #e4830c;
     -webkit-transition: color, font-size 0.3s;
@@ -415,7 +417,7 @@
       color: #463232;
       text-decoration: none; }
   .main-class .impact-story a {
-    font-family: verdana;
+    font-family: sans-serif;
     text-decoration: none;
     color: #417774;
     -webkit-transition: color, font-size 0.3s;
