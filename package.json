@@ -59,7 +59,7 @@
     "gulp-update": "0.0.2",
     "jquery": "^1.9.1",
     "jsoneditor": "^5.32.0",
-    "moment": "^2.9.0",
+    "moment": "^2.29.4",
     "ng-file-upload": "^12.2.13",
     "ng-jsoneditor": "^1.0.0",
     "ngclipboard": "^1.1.2",
